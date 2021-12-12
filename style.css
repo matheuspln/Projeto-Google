@@ -1,0 +1,52 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-color: #202124;
+	font-family: sans-serif;
+}
+
+header {
+	height: 70px;
+}
+
+header img {
+	height: 100%;
+}
+
+header a {
+	color: #FFF;
+	font-size: 12px;
+}
+
+#profilePic {
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#options {
+	border-radius: 50%;
+	display: inline-block;
+	border: 1px solid red;
+	height: 60px;
+	width: 60px;
+	cursor: pointer;
+}
+
+#dots {
+	height: 100%;
+}
+
+#logo {
+	margin-top: 20px;
+}
+
+footer {
+	background-color: #181819;
+}
