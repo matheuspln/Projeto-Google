@@ -3,8 +3,16 @@
 	margin: 0;
 }
 
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
 a {
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 body {
@@ -12,8 +20,13 @@ body {
 	font-family: sans-serif;
 }
 
+/* formatação cabeçalho */
+
 header {
 	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 header img {
@@ -23,24 +36,34 @@ header img {
 header a {
 	color: #FFF;
 	font-size: 12px;
+	margin: 0 10px;
 }
 
 #profilePic {
 	border-radius: 50%;
+	width: 40px;
+	height: 40px;
 	cursor: pointer;
+	margin: 0 10px;
 }
 
 #options {
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
-	display: inline-block;
-	border: 1px solid red;
-	height: 60px;
-	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	cursor: pointer;
 }
 
 #dots {
-	height: 100%;
+	width: 50%;
+	height: 50%;
+}
+
+#options:hover {
+	background-color: #303134;
 }
 
 #logo {
@@ -50,3 +73,118 @@ header a {
 footer {
 	background-color: #181819;
 }
+
+/* Formatação main */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#logo {
+	width: 375px;
+}
+
+#searchBar {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#searchInput {
+	border: 1px solid #cecece;
+	width: 582px;
+	height: 44px;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#searchInput:hover {
+	background-color: #303134;
+}
+
+#search {
+	height: 100%;
+	width: 450px;
+	background-color: #202124;
+	border: none;
+}
+
+#search:hover {
+	background-color: #303134;
+}
+
+#searchIcon {
+	margin-left: 10px;
+}
+
+#micIcon {
+	margin-right: 10px;
+}
+
+#searchBar img {
+	width: 20px;
+	cursor: pointer;
+}
+
+#buttons {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+	width: 270px;
+}
+
+#buttons input {
+	background-color: #303134;
+	padding: 10px 15px 10px 15px;
+	color: #FFF;
+	border-radius: 5px;
+	border: none;
+}
+
+p {
+	color: #FFF;
+	font-size: 0.9em;
+}
+
+#english {
+	color: #3a7ad6;
+}
+
+/* Formatação rodapé */
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+footer a {
+	color: #999a9a;
+}
+
+ul {
+	display: inline;
+}
+
+li {
+	display: inline;
+	margin-right: 10px;
+}
+
+#menu1 {
+	padding: 15px 30px;
+}
+
+#menu2 {
+	border-top: 0.1px solid #999a9a;
+	padding: 15px 25px 15px 30px;
+	display: flex;
+	justify-content: space-between;
+} 

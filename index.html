@@ -3,8 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Aula</title>
+	<title>Google</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="icon.png">
 </head>
 <body>
 
@@ -21,28 +22,28 @@
 		<img src="google.gif" id="logo">
 
 		<div id="searchBar">
-			<img src="">
-			<input type="text" id="search">
-			<a href="">
-				<img src="keyboard.png">
-			</a>
-			<a href="">
-				<img src="mic.png">
-			</a>
+			<div id="searchInput">
+				<img src="lupa.png" id="searchIcon">
+				<input type="text" id="search">
+				<img src="keyboard.png" id="keyIcon">
+				<img src="mic.png" id="micIcon">
+			</div>
+
+			<div id="buttons">
+				<input type="button" value="Pesquisa Google">
+				<input type="button" value="Estou com sorte">
+			</div>
 		</div>
 
-		<input type="button" value="Pesquisa Google">
-		<input type="button" value="Estou com sorte">
-
-		<p>Disponibilizado pelo Google em: <a href="">English</a></p>
+		<p>Disponibilizado pelo Google em: <a href="" id="english">English</a></p>
 	</main>
 
 	<footer>
-		<div>
+		<div id="menu1">
 			<a href="">Brasil</a>
 		</div>
 
-		<div>
+		<div id="menu2">
 			<ul>
 				<li>
 					<a href="">
